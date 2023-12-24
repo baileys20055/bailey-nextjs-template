@@ -28,7 +28,6 @@ export default function ThemeToggle({}: Props) {
 
   useEffect(() => setMounted(true), []);
 
-
   useEffect(() => {
     localStorage.setItem('theme', theme as string);
     setbTheme(theme as string);
