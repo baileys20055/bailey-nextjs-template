@@ -1,4 +1,4 @@
-import ThemeToggle from './ui/themes/ThemeToggle';
+import ThemeToggle from './ui/themes/theme-toggle';
 
 export default function Home() {
   return (
