@@ -1,8 +1,14 @@
 import { cn } from "@/app/utils/helpers";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+// interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+//   children: React.ReactNode;
+// }
+
+type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
   children: React.ReactNode;
-}
+};
+
+// interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {}
 
 export function Button({ children, className, ...rest }: ButtonProps) {
   return (
